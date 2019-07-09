@@ -25,6 +25,7 @@
       width: 50%;
       height: .3rem;
       background: #ff002d;
+      animation: increaseLength 1s ease-out;
     }
   }
 
@@ -36,9 +37,10 @@
     display: flex;
     align-items: center;
     color: #000000;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     font-weight: 700;
     padding-right: 25rem;
+    transform: translateY(-1rem);
 
     & span {
       display: inline-block; 

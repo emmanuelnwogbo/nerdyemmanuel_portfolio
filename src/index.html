@@ -5,48 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,500,700,900" rel="stylesheet">
+  <style>
+    #app {
+      display: none;
+    }
+  </style>
   <title>nerdyemmanuel</title>
 </head>
+
 <body>
-  <div class='menu'>
-    <h3>nerdyemmanuel</h3>
-    <div class='menu__list'>
-      <span>My work</span>
-      <span>Contact me</span>
-    </div>
-  </div>
-  <div class='header'>
-    <div class='header__body'>
-      <div class='header__body--text'>
-        <p>HEY THERE, I AM <span>EMMANUEL NWOGBO</span></p>
-        <h3>Software Developer</h3>
-        <div class='header__btns'>
-          <button>Portfolio</button>
-          <span>
-            <svg class='header__btns--svg'>
-              <use xlink:href="./imgs/sprite.svg#icon-codepen"/>
-            </svg> 
-          </span>
-          <span>
-            <svg class='header__btns--svg'>
-              <use xlink:href="./imgs/sprite.svg#icon-github1"/>
-            </svg> 
-          </span>
-          <span>
-            <svg class='header__btns--svg'>
-              <use xlink:href="./imgs/sprite.svg#icon-instagram"/>
-            </svg> 
-          </span>
-          <span>
-            <svg class='header__btns--svg'>
-              <use xlink:href="./imgs/sprite.svg#icon-twitter"/>
-            </svg> 
-          </span>
-        </div>
+  <div id='app'>
+    <div class='menu'>
+      <h3>nerdyemmanuel</h3>
+      <div class='menu__list'>
+        <span class='open-portfolio'>My work</span>
+        <span>Contact me</span>
       </div>
     </div>
-    <div class='header__halfone header__half'></div>
-    <div class='header__halftwo header__half'></div>
-  </div>  
+    <div class='header'>
+      <div class='header__body'>
+        <div class='header__body--text'>
+          <p><span>HEY THERE, I AM</span><span>EMMANUEL NWOGBO</span></p>
+          <h3>Software Developer</h3>
+          <div class='header__btns'>
+            <button class='open-portfolio'>Portfolio</button>
+            <span>
+              <svg class='header__btns--svg'>
+                <use xlink:href="./imgs/sprite.svg#icon-codepen"/>
+              </svg> 
+            </span>
+            <span>
+              <svg class='header__btns--svg'>
+                <use xlink:href="./imgs/sprite.svg#icon-github1"/>
+              </svg> 
+            </span>
+            <span>
+              <svg class='header__btns--svg'>
+                <use xlink:href="./imgs/sprite.svg#icon-instagram"/>
+              </svg> 
+            </span>
+            <span>
+              <svg class='header__btns--svg'>
+                <use xlink:href="./imgs/sprite.svg#icon-twitter"/>
+              </svg> 
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class='header__halfone header__half'></div>
+      <div class='header__halftwo header__half'></div>
+    </div> 
+
+    <div class='portfolio' id='portfolio'>
+      <span class='portfolio__close' id='close-portfolio'>
+        <svg class='portfolio__close--svg'>
+          <use xlink:href="./imgs/sprite.svg#icon-cross"/>
+        </svg> 
+      </span>
+      <div class='portfolio__card'>
+        <figure>
+          <img src='./imgs/test.jpg'/>
+        </figure>
+        <span>view</span>
+      </div>
+    </div>
+  </div> 
 </body>
 </html>
