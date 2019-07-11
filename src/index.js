@@ -8,7 +8,44 @@ const closePortfolio = document.getElementById('close-portfolio');
 const openPortfolio = document.querySelectorAll(".open-portfolio");
 const portfolio = document.getElementById('portfolio');
 
-portfolio.addEventListener('click', function(e) {
+const projects = [
+  {
+    name: 'soundstr'
+  },
+  {
+    name: 'cookBook'
+  },
+  {
+    name: 'project3'
+  },
+  {
+    name: 'project4'
+  },
+  {
+    name: 'project4'
+  },
+];
+
+const projectCardMarkUp = (project) => {
+  return (
+    `
+      <div class='portfolio__card'>
+        <figure>
+          <img src='./imgs/test.jpg'/>
+        </figure>
+        <span>view</span>
+      </div>
+    `
+  )
+}
+
+projects.forEach(project => {
+  portfolio.insertAdjacentHTML('beforeend', projectCardMarkUp(project));
+})
+
+
+
+/*portfolio.addEventListener('click', function(e) {
   if (e.target.id === 'portfolio') {
     //this.style.display = 'none';
   }
@@ -22,4 +59,4 @@ openPortfolio.forEach(item => {
 
 closePortfolio.addEventListener('click', function() {
   //portfolio.style.display = 'none';
-})
+})*/

@@ -8,6 +8,10 @@
   padding-left: 8rem;
   z-index: 1000;
 
+  @media only screen and (max-width: 87.188em) {
+    padding-left: 4rem;
+  }
+
   & h3 {
     position: relative;
     font-weight: 700;
