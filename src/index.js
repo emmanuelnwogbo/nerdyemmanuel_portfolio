@@ -9,6 +9,30 @@ const form = document.getElementById('form');
 const open_form = document.getElementById('open_form');
 const close_form = document.getElementById('close-form');
 
+Array.from(document.getElementsByClassName('social-btns')).forEach(btn => {
+  btn.addEventListener('click', function() {
+    if (this.id === 'codepen-link') {
+      const win = window.open('https://codepen.io/nerdyemmanuel/', '_blank');
+      win.focus();
+    }
+
+    if (this.id === 'github-link') {
+      const win = window.open('https://github.com/emmanuelnwogbo/', '_blank');
+      win.focus();
+    }
+
+    if (this.id === 'instagram-link') {
+      const win = window.open('https://www.instagram.com/nerdyemmanuel/', '_blank');
+      win.focus();
+    }
+
+    if (this.id === 'twitter-link') {
+      const win = window.open('https://twitter.com/nerdyemmanuel', '_blank');
+      win.focus();
+    }
+  })
+})
+
 open_form.addEventListener('click', () => {
   form.style.display = `block`;
 });
