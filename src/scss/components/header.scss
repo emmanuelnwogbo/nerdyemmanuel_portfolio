@@ -15,11 +15,11 @@
   
   &__half {
     height: 100vh;
+    position: relative;
   }
 
   &__halfone {
-    flex-basis: 48%;
-    position: relative;
+    width: 48%;
     border-radius: 0 0 27rem 0;
     background: linear-gradient(to bottom,rgba(176, 0, 255,1),rgba(106, 0, 255,1));
     z-index: 2;
@@ -27,11 +27,21 @@
   }
 
   &__halftwo {
-    flex-basis: 52%;
-    position: relative;
+    width: 52%;
     border-radius: 20rem .3rem 0;
     background: linear-gradient(to bottom,rgba(255, 166, 0,1),rgba(255, 0, 45,1));
-    z-index: 2;
+    z-index: 10;
+
+    &::before {
+      content: '';
+      right: 0;
+      top: 0;
+      height: 100%;
+      width: 8%;
+      background: linear-gradient(to bottom, #ffa600, #ff002d);
+      position: absolute;
+      z-index: 2100;
+    }
   }
 
   &__body {
@@ -44,7 +54,7 @@
     color: #fff;
     text-align: left;
     line-height: 8rem;
-    padding-left: 16rem;
+    padding-left: 8rem;
 
     &--text {
       margin-top: 30rem;
@@ -77,18 +87,17 @@
     }
 
     & button {
-      border-radius: 3rem .3rem;
-      padding: 1rem 3rem;
+      border-radius: 3rem;
+      padding: 1.5rem 3rem;
       cursor: pointer;
       color: #fff;
       background: #000000;
-      font-weight: 700;
       box-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.6);
-      font-size: 2rem;
+      font-size: 1.8rem;
       outline: none;
       text-decoration: none;
       text-align: center;
-      transition:  all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
       border: none;
       letter-spacing: .1rem;
       margin-top: 3rem;

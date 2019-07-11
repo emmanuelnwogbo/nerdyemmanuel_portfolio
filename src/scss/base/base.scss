@@ -10,12 +10,16 @@ html {
   box-sizing: border-box;
   font-size: 70%;
 
+  @media only screen and (min-width: 125em) {
+    font-size: 86%;
+  }
+
   @media only screen and (min-width: 156.25em) {
-    font-size: 85%;
+    font-size: 96%;
   }
 
   @media only screen and (min-width: 181.25em) {
-    font-size: 100%;
+    font-size: 110%;
   }
 }
 

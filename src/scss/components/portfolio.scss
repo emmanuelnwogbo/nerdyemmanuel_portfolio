@@ -1,19 +1,29 @@
 .portfolio {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   overflow: scroll;
   overflow-x: hidden;
-  background: rgba(192, 57, 43,.5);
+  //background: rgba(192, 57, 43, 0.5);
   z-index: 2000;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(18rem, 18rem));
-  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 15rem));
+  grid-template-rows: repeat(auto-fit, minmax(1rem, 1rem));
+  grid-gap: 1rem;
   align-items: start;
-  padding: 3rem;
-  display: none;
+  justify-content: center;
+  padding: 8rem 1rem 1rem;
+
+  & h3 { 
+    grid-column: 1 / -1;
+    color: #000000;
+    grid-row: span 4;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+  }
 
   &__close {
     position: absolute;
@@ -37,19 +47,18 @@
 
   &__card {
     position: relative;
+    grid-row: span 16;
     grid-column: span 2;
-    height: 36rem;
-    width: 36rem;
+    height: 30rem;
     cursor: pointer;
-    width: 36rem;
+    width: 30rem;
     overflow: hidden;
-    border-radius: .5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     border: none;
+    //box-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.6);
     @include portfolioCards;
-    box-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.6);
 
     &::before {
       content: '';
@@ -82,7 +91,7 @@
       position: relative;
       color: #fff;
       font-weight: 700;
-      font-size: 2rem;
+      font-size: 1.7rem;
       cursor: pointer;
       display: inline-block;
       z-index: 11;

@@ -10,16 +10,16 @@ const portfolio = document.getElementById('portfolio');
 
 portfolio.addEventListener('click', function(e) {
   if (e.target.id === 'portfolio') {
-    this.style.display = 'none';
+    //this.style.display = 'none';
   }
 })
 
 openPortfolio.forEach(item => {
   item.addEventListener('click', function () {
-    portfolio.style.display = 'grid';
+    //portfolio.style.display = 'grid';
   })
 })
 
 closePortfolio.addEventListener('click', function() {
-  portfolio.style.display = 'none';
+  //portfolio.style.display = 'none';
 })
