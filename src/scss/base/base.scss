@@ -18,6 +18,22 @@ html {
     font-size: 45%;
   }
 
+  @media only screen and (max-width: 64em) {
+    font-size: 63%;
+  }
+
+  @media only screen and (max-width: 48em) {
+    font-size: 49%;
+  }
+
+  @media only screen and (max-width: 37.375em) {
+    font-size: 40%;
+  }
+
+  @media only screen and (max-width: 32.563em) {
+    font-size: 33%;
+  }
+
   @media only screen and (min-width: 92.875em) {
     font-size: 55%;
   }
@@ -44,7 +60,12 @@ html {
 }
 
 body {
-  //overflow-y: hidden;
+  position: relative;
   overflow-x: hidden;
   overflow: hidden;
+
+  @media only screen and (max-width: 65.125em) {
+    overflow: scroll;
+    overflow-x: hidden;
+  }
 }

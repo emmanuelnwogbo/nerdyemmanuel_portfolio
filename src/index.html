@@ -28,7 +28,7 @@
           <p><span>HEY THERE, I AM</span><span>EMMANUEL NWOGBO</span></p>
           <h3>Software Developer</h3>
           <div class='header__btns'>
-            <button class='open-portfolio'>Contact me</button>
+            <button class='open-portfolio' id='open_form'>Contact me</button>
             <span>
               <svg class='header__btns--svg'>
                 <use xlink:href="./imgs/sprite.svg#icon-codepen"/>
@@ -57,6 +57,36 @@
         <div class='portfolio' id='portfolio'>
           <h3>Portfolio</h3>
         </div>
+      </div>
+      <div class='form' id='form'>
+        <form class='form__body'>
+          <span class='form__close' id='close-form'>
+            <svg class='form__close--svg'>
+              <use xlink:href="./imgs/sprite.svg#icon-cross"/>
+            </svg> 
+          </span>
+          <div class='form__body--header'>
+            <h2>Contact Me</h2>
+            <p>Please fill the form below.</p>
+          </div>
+          <div class='form__body--area'>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class='form__body--area'>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class='form__body--area'>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+          </div>
+          <div class='form__body--area'>
+            <label for="subject">Your Message</label>
+            <textarea placeholder="Your Message" rows="7" name="message" id="message" required="" spellcheck="false"></textarea>
+          </div>
+          <input class='form__body--btn' type="submit" value="Send Message">
+        </form>
       </div>
     </div> 
   </div> 

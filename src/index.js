@@ -4,9 +4,24 @@ window.onload = () => {
   document.getElementById('app').style.display = `block`;
 }
 
-const closePortfolio = document.getElementById('close-portfolio');
-const openPortfolio = document.querySelectorAll(".open-portfolio");
 const portfolio = document.getElementById('portfolio');
+const form = document.getElementById('form');
+const open_form = document.getElementById('open_form');
+const close_form = document.getElementById('close-form');
+
+open_form.addEventListener('click', () => {
+  form.style.display = `block`;
+});
+
+close_form.addEventListener('click', () => {
+  form.style.display = `none`;
+});
+
+form.addEventListener('click', function(e) {
+  if (e.target.id === 'form') {
+    this.style.display = 'none';
+  }
+})
 
 const projects = [
   {

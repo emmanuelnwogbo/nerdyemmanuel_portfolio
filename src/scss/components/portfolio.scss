@@ -16,6 +16,16 @@
   justify-content: center;
   padding: 8rem 1rem 1rem;
 
+  @media only screen and (max-width: 65.125em) {
+    overflow: visible
+  }
+
+  @media only screen and (max-width: 50em) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   & h3 { 
     grid-column: 1 / -1;
     color: #000000;
@@ -23,25 +33,9 @@
     font-size: 3rem;
     text-align: center;
     text-decoration: underline;
-  }
 
-  &__close {
-    position: absolute;
-    top: 3%;
-    right: 2%;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50%;
-    cursor: pointer;
-    background: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    & svg {
-      height: 3rem;
-      width: 3rem;
-      fill: #000000;
+    @media only screen and (max-width: 50em) {
+      font-size: 5rem;
     }
   }
 
@@ -59,6 +53,18 @@
     border: none;
     //box-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.6);
     @include portfolioCards;
+
+    @media only screen and (max-width: 50em) {
+      margin: 1rem 0;
+      height: 50rem;
+      width: 50rem;
+    }
+
+    @media only screen and (max-width: 22.5em) {
+      margin: 1rem 0;
+      height: 40rem;
+      width: 40rem;
+    }
 
     &::before {
       content: '';
@@ -102,6 +108,10 @@
       background: #000000;
       box-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.6);
       transition:  all .2s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+      @media only screen and (max-width: 50em) {
+        font-size: 3rem;
+      }
 
       &:hover {
         transform: translateY(-.3rem)
