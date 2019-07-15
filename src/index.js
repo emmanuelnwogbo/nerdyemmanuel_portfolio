@@ -3,6 +3,8 @@ import validator from 'validator';
 
 window.onload = () => {
   document.getElementById('app').style.display = `block`;
+  document.getElementById('loadingscreen').style.opacity = '0';
+  document.getElementById('loadingscreen').style.zIndex = '-1';
 }
 
 const portfolio = document.getElementById('portfolio');
