@@ -60,6 +60,16 @@
       </div>
       <div class='form' id='form'>
         <form class='form__body' id='form--body'>
+          <div class='form__body__sending' id='sending-feedback'>
+            <div class='form__body__sending--body'>
+              <h3>Sending Message</h3>
+              <span>
+                <svg>
+                  <use xlink:href="./imgs/sprite.svg#icon-spinner10"/>
+                </svg> 
+              </span>
+            </div>
+          </div>
           <span class='form__close' id='close-form'>
             <svg class='form__close--svg'>
               <use xlink:href="./imgs/sprite.svg#icon-cross"/>
@@ -71,7 +81,7 @@
           </div>
           <div class='form__body--area'>
             <label for="name">Please fill this input properly *</label>
-            <input type="text" id="name" name="name" placeholder="Your Name *" required>
+            <input type="text" id="name" name="name" placeholder="Fullname *" required>
           </div>
           <div class='form__body--area'>
             <label for="email">Please fill this input properly *</label>
@@ -79,7 +89,7 @@
           </div>
           <div class='form__body--area'>
             <label for="subject">Please fill this input properly *</label>
-            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <input type="text" id="subject" name="subject" placeholder="Subject *" required>
           </div>
           <div class='form__body--area'>
             <label for="message">Please fill this input properly *</label>

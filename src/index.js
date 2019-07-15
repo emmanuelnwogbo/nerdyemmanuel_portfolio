@@ -11,6 +11,7 @@ const open_form = document.getElementById('open_form');
 const close_form = document.getElementById('close-form');
 const formBody = document.getElementById('form--body');
 const sendBtn = document.getElementById('send-message');
+const sendingFeedback = document.getElementById('sending-feedback');
 
 const inputs = Array.from(formBody.elements);
 
@@ -46,6 +47,8 @@ sendBtn.addEventListener('click', function(event) {
     return;
   }
 
+  sendingFeedback.style.display = `flex`;
+
   (function(){
     emailjs.init("user_kgcHGCFVpaUvP17ygNO6E");
 
@@ -58,10 +61,21 @@ sendBtn.addEventListener('click', function(event) {
     //console.log(emailjs);
     emailjs.send('default_service', 'template_r729KTtR', templateParams)
     .then(function(response) {
-       console.log('SUCCESS!', response.status, response.text);
+       //console.log('SUCCESS!', response.status, response.text);
+       alert('message sent');
+       inputs.forEach(input => {
+         if (input.name === 'email' 
+         || input.name === 'name' 
+         || input.name === 'subject' 
+         || input.name === 'message') {
+           input.value = '';
+         }
+       })
        form.style.transform = 'scale(0) translateY(-100%)';
     }, function(error) {
-       console.log('FAILED...', error);
+        alert('there was an error sending the message, pls try again')
+        sendingFeedback.style.display = `none`;
+       //console.log('FAILED...', error);
     });
  })();
 })
@@ -92,6 +106,7 @@ Array.from(document.getElementsByClassName('social-btns')).forEach(btn => {
 
 open_form.addEventListener('click', () => {
   form.style.transform = 'scale(1) translateY(0)';
+  sendingFeedback.style.display = `none`;
   form.style.display = `block`;
 });
 

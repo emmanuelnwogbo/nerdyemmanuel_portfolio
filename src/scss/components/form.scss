@@ -153,4 +153,26 @@
       }
     }
   }
+
+  &__body__sending {
+    background: rgba(106, 0, 255,1);    
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #6a00ff;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+    display: none;
+
+    & svg {
+      height: 5rem;
+      width: 5rem;
+      fill: #fff;
+      animation: spinThree 1s linear 1s infinite;
+    }
+  }
 }
