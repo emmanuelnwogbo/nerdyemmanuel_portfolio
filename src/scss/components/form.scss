@@ -7,6 +7,7 @@
   background: linear-gradient(to bottom,rgba(255, 166, 0,.5),rgba(255, 0, 45,1));
   z-index: 500;
   padding: 4rem 0;
+  transition: all .1s ease-in-out;
   display: none;
 
   &__close {
@@ -66,8 +67,11 @@
 
       & label {
         display: block;
-        padding: 1.5rem 2rem;
+        padding: 0rem 2rem;
         display: none;
+        color: red;
+        transform: translateY(4rem);
+        z-index: -1;
       }
 
       & input {

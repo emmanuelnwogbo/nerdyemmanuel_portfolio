@@ -20,6 +20,10 @@
     overflow: visible
   }
 
+  @media only screen and (max-width: 64em) {
+    z-index: 2100;
+  }
+
   @media only screen and (max-width: 50em) {
     display: flex;
     flex-direction: column;
@@ -49,10 +53,17 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: center;
+    transition: all .2s ease-in;
+    justify-content: space-evenly;
     border: none;
     //box-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.6);
     @include portfolioCards;
+
+    &:hover {
+      & > figure img {
+        transform: scale(1.2);
+      }
+    }
 
     @media only screen and (max-width: 50em) {
       margin: 1rem 0;
@@ -73,7 +84,7 @@
       left: 0;
       height: 100%;
       width: 100%;
-      background: rgba(45, 52, 54,.1);
+      background: rgba(45, 52, 54,.5);
       z-index: 10;
     }
 
@@ -84,26 +95,29 @@
       height: 100%;
       width: 100%;
       z-index: 9;
+      overflow: hidden;
+      transition: all .2s ease-in;
 
       & img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         display: block;  
+        transition: all .2s ease-in;
       }
     }
 
     & span {
       position: relative;
       color: #fff;
-      font-weight: 700;
+      font-weight: 700; 
       font-size: 1.7rem;
       cursor: pointer;
       display: inline-block;
       z-index: 11;
       text-transform: uppercase;
       text-align: center;
-      padding: 0.2rem 3.5rem;
+      padding: 0.8rem 3.5rem;
       border-radius: .3rem 3rem;
       background: #000000;
       box-shadow: 2rem 1rem 2rem rgba(0, 0, 0, 0.6);

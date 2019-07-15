@@ -59,14 +59,15 @@
 
     @media only screen and (max-width: 65.125em) {
       width: 100%;
+      height: 145rem;
     }
 
     @media only screen and (max-width: 50em) {
-      height: 275rem;
+      height: 500rem;
     }
 
     @media only screen and (max-width: 22.5em) {
-      height: 200rem;
+      height: 400rem;
     }
 
     &::before {

@@ -41,11 +41,11 @@ const config = {
         ]
       },
       {
-        test: /\.svg$/,
+        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/, /\.svg$/],
         use: 'file-loader'
       },
       {
-        test: /\.png$/,
+        test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/, /\.svg$/],
         use: [
           {
             loader: 'url-loader',
