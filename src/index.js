@@ -139,9 +139,9 @@ const projects = [
     github_link: 'https://github.com/emmanuelnwogbo/tourism-finder'
   },
   {
-    link: 'https://emmanuelnwogbo.github.io/quotstr-frontend/',
-    image_link: `'https://res.cloudinary.com/drah490l8/image/upload/q_56/v1562883163/quoststr_yluex7.jpg'`,
-    github_link: 'https://github.com/emmanuelnwogbo/quotstr-frontend'
+    link: 'https://emmanuelnwogbo.github.io/unsplash-gallery/',
+    image_link: `'https://res.cloudinary.com/drah490l8/image/upload/v1565575398/Screenshot_1707_cf1lwo.png'`,
+    github_link: 'https://github.com/emmanuelnwogbo/unsplash-gallery'
   },
   {
     link: 'https://emmanuelnwogbo.github.io/soundreact2/',
