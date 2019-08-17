@@ -134,24 +134,14 @@ const projects = [
     github_link: 'https://github.com/emmanuelnwogbo/soundstr'
   },
   {
-    link: 'https://blooming-hamlet-55601.herokuapp.com/',
-    image_link: `'https://res.cloudinary.com/drah490l8/image/upload/q_53/v1562883160/cook_prg5nd.jpg'`,
-    github_link: 'https://github.com/emmanuelnwogbo/tourism-finder'
+    link: 'https://emmanuelnwogbo.github.io/foodside/',
+    image_link: `'https://res.cloudinary.com/drah490l8/image/upload/v1566035488/Screenshot_1714_ur9eti.png'`,
+    github_link: 'https://github.com/emmanuelnwogbo/foodside'
   },
   {
     link: 'https://emmanuelnwogbo.github.io/unsplash-gallery/',
     image_link: `'https://res.cloudinary.com/drah490l8/image/upload/v1565575398/Screenshot_1707_cf1lwo.png'`,
     github_link: 'https://github.com/emmanuelnwogbo/unsplash-gallery'
-  },
-  {
-    link: 'https://emmanuelnwogbo.github.io/soundreact2/',
-    image_link: `'https://res.cloudinary.com/drah490l8/image/upload/q_58/v1562883189/soundstr_kgwtg0.jpg'`,
-    github_link: 'https://github.com/emmanuelnwogbo/soundreact2'
-  },
-  {
-    link: 'https://emmanuelnwogbo.github.io/foodie/',
-    image_link: `'https://res.cloudinary.com/drah490l8/image/upload/q_55/v1562883167/foodstr_s1xjjz_afrgqt.jpg'`,
-    github_link: 'https://github.com/emmanuelnwogbo/foodie'
   },
   {
     link: 'https://codepen.io/nerdyemmanuel/full/zePZjB',
@@ -163,11 +153,11 @@ const projects = [
     image_link: `'https://res.cloudinary.com/drah490l8/image/upload/v1562883185/music_player_hilszm.jpg'`,
     github_link: 'https://codepen.io/nerdyemmanuel/pen/bZMgYW'
   },
-  {
+  /*{
     link: 'https://codepen.io/nerdyemmanuel/full/eXXGgR',
     image_link: `'https://res.cloudinary.com/drah490l8/image/upload/q_62/v1562883159/guessinggame_dqkgqb.jpg'`,
     github_link: 'https://codepen.io/nerdyemmanuel/pen/eXXGgR'
-  },
+  },*/
   {
     link: 'https://codepen.io/nerdyemmanuel/full/EGajyR',
     image_link: `'https://res.cloudinary.com/drah490l8/image/upload/v1562883198/ui_demo_xxvgs5.jpg'`,
